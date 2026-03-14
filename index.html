@@ -488,12 +488,13 @@
 // Bu kısımı Firebase Console'dan aldığın config ile değiştir!
 // Adımlar için aşağıdaki KURULUM kılavuzuna bak.
 const FIREBASE_CONFIG = {
-  apiKey: "BURAYA_API_KEY",
-  authDomain: "BURAYA_AUTH_DOMAIN",
-  projectId: "BURAYA_PROJECT_ID",
-  storageBucket: "BURAYA_STORAGE_BUCKET",
-  messagingSenderId: "BURAYA_SENDER_ID",
-  appId: "BURAYA_APP_ID"
+  apiKey: "AIzaSyDLBwrD9K0FeuR5hRgkhtIDuMKy3K_WekU",
+  authDomain: "rollsat.firebaseapp.com",
+  projectId: "rollsat",
+  storageBucket: "rollsat.firebasestorage.app",
+  messagingSenderId: "761345761772",
+  appId: "1:761345761772:web:6a9344ba2791b5f5e8a0c9"
+  measurementId: "G-F37M1M7RNH"
 };
 
 let firebaseReady = false;
@@ -501,7 +502,7 @@ let auth = null;
 let db = null;
 
 try {
-  if (FIREBASE_CONFIG.apiKey !== "BURAYA_API_KEY") {
+  if (FIREBASE_CONFIG.apiKey !== "AIzaSyDLBwrD9K0FeuR5hRgkhtIDuMKy3K_WekU") {
     firebase.initializeApp(FIREBASE_CONFIG);
     auth = firebase.auth();
     db = firebase.firestore();
